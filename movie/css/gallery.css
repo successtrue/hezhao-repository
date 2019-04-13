@@ -1,0 +1,12 @@
+.gallery-cell img{
+	width: 555px;
+	height: 250px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.gallery{
+	
+}
+.main-gallery{
+	background-color: white;
+}

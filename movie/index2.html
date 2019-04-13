@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		.gallery-cell {
+			width: 555px;
+			height: 240px;
+			margin: 15px;
+		}
+		 .header {
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            z-index: 999;
+        }
+		.headroom {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: all .2s ease-in-out;
+        }
+
+        .headroom--unpinned {
+            top: -100px;
+        }
+
+        .headroom--pinned {
+            top: 0;
+        }
+	</style>
+	<link rel="stylesheet" href="css/ppt.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/extra.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/friendly_link.css" />
+	<link rel="stylesheet" href="css/gallery.css" />
+	    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <!--Headroom-->
+    <script src="js/headroom.js"></script>
+	<!--import flickity-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
+	
+	<!--import:share-->
+	<script src="http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=431073"></script>
+	<link rel="stylesheet" href="http://bdimg.share.baidu.com/static/api/css/share_popup.css?v=ecc6050c.css">
+	<!--		<script type="text/javascript" src="js/home.js" ></script>-->
+	<!--		<script type="text/javascript" src="js/stui_default.js" ></script>-->
+
+	<!--[if lt IE 9]><script src="/statics/js/html5shiv.min.js"></script><script src="/statics/js/respond.min.js"></script><![endif]-->
+
+	<!--fontAwesome-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+	</head>
+	<body>
+		<!--start:container-->
+	<div id="container" style="margin-top: 85px;">
+		<!--start:row-->
+		<div class="row">
+			<div class="stui-pannel stui-pannel-bg clearfix">
+					<div class=" stui-pannel-box ">
+						<div class=" stui-pannel_db ">
+							<div class=" col-pd clearfix ">
+								<i class=" fa fa-volume-up "></i>
+								<font color=" ">重大通知更换新地址 www.7dds.com 以免走丢 (^_^)∠※</font>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end:row-->
+		</div>
+		<!--end:container-->
+		<!--start:header-->
+		<header class="header" id="header">
+			<!--start:container-->
+			<div class=" container " style=" ">
+				<!--start:row-->
+				<div class=" row ">
+					<!--start:-->
+					<div class=" stui-header_bd clearfix ">
+						<!--start-->
+						<div class=" stui-header__logo ">
+							<a class=" logo " href=" http://www.7dds.com/ "></a>
+						</div>
+						<div class=" stui-header__side ">
+							<ul class=" stui-header__user ">
+								<li class=" visible-xs "></li>
+							</ul>
+							<div class=" stui-header__search ">
+								<form name=" formsearch " id=" formsearch " action=" " method=" post " autocomplete=" off ">
+									<input class=" form-control " id=" wd " placeholder=" 输入影片关键词搜索... " name=" wd " type=" text " required=" " />
+									<!--<input type=" submit "/>-->
+									<button class=" submit " id=" submit " onclick=" $( 'formsearch' ).submit(); ">
+									<i class=" fa fa-search "></i>
+								</button>
+								</form>
+								<div id=" word " class=" autocomplete-suggestions active hidden-xs " style=" display: none; "></div>
+							</div>
+						</div>
+						<ul class=" stui-header__menu type-slide ">
+							<li class=" active ">
+								<a href=" ">首页</a>
+							</li>
+							<li>
+								<a href=" ">电影</a>
+							</li>
+							<li>
+								<a href=" ">电视剧</a>
+							</li>
+							<li>
+								<a href=" ">综艺</a>
+							</li>
+							<li>
+								<a href=" ">动漫</a>
+							</li>
+							<li>
+								<a href=" ">留言</a>
+							</li>
+						</ul>
+						<!--end:-->
+					</div>
+					<!--end:-->
+				</div>
+				<!--end:row-->
+			</div>
+			<!--end:container-->
+		</header>
+		<!--end:header-->
+		
+		<!--start:container-->
+		<div class="container">
+			<div class="row">
+				<!--start:PPT-->
+				<div class="stui-pannel stui-pannel-bd clearfix" style="background-color:;">
+					<div class="stui-pannel-box clearfix">
+						<div class="stui-pannel-bd" style="background-color:;">
+								<div class="main-gallery gallery js-flickity" data-flickity-options='{ "cellAlign":"left","contain":true,"prevNextButtons":false,"autoPlay":true,"wrapAround":true }'>
+									<div class="gallery-cell"><img src="img/download.jpg"/></div>
+									<div class="gallery-cell"><img src="img/download.jpg"/></div>
+									<div class="gallery-cell"><img src="img/download.jpg"/></div>
+									<div class="gallery-cell"><img src="img/download.jpg"/></div>
+									<div class="gallery-cell"><img src="img/download.jpg"/></div>
+									<div class="gallery-cell"><img src="img/download.jpg"/></div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<!--end:PPT-->
+				
+				<!--start:剧情列表-->
+				<!--start-->
+		    <div class=" stui-pannel stui-pannel-bg clearfix " style="margin-top: 250px;">
+				<!--start-->
+				<div class=" stui-pannel-box clearfix ">
+					<!--start-->
+					<div class=" col-lg-wide-75 col-xs-1 padding-0 ">
+						<!--start-->
+						<div class=" stui-pannel-hd ">
+							<div class=" stui-pannel__head clearfix ">
+								<a class=" more text-muted pull-right "><i class=" icon icon-font icon-more ">更多></i></a>
+								<h3 class=" title "><img src="img/download.png"/><a href=" ">电影</a></h3>
+									<ul class=" nav nav-text pull-right hidden-sm hidden-xs ">
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+										<li class=" col-md-5 col-sm-4 col-xs-3 ">
+											<a href=" " class=" text-muted ">战争片</a>
+											<span class=" split-line ">|</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--start-->
+							<div class=" stui-pannel-bd clearfix ">
+								<ul class=" stui-vod-list clearfix ">
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+									<li class=" col-md-5 col-sm-4 col-xs-3 ">
+										<div class=" stui-vodlist__box ">
+											<a class=" stui-vodlist__thumb lazyload " href=" " title=" " data-original=" " style=" background-image:
+				url(http://ww1.sinaimg.cn/large/87c01ec7gy1fs8qcniaxsj20fi072108.jpg); ">
+												<span class=" play hidden-xs "></span>
+												<span class=" pic-text text-right ">高清</span>
+											</a>
+										</div>
+										<div class=" stui-vodlist__detail ">
+											<h4 class=" title text-overflow "><a href=" " title=" ">小偷家族</a></h4>
+											<p class=" text text-overflow text-muted hidden-xs ">中川雅也,安藤樱,松冈茉优,城桧吏</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--end-->
+							<!--end-->
+						</div>
+						<div class=" col-lg-wide-25 hidden-sm hidden-xs ">
+							<!--start-->
+							<div class=" stui-pannel-hd ">
+								<div class=" stui-pannel__head clearfix ">
+									<a class=" more text-muted pull-right " href=" ">更多<i class=" icon iconfont icon-more "></i></a>
+									<h3 class=" title "><img src="img/icon_12.png"/>热播榜</h3>
+								</div>
+							</div>
+							<div class=" stui-pannel-bd ">
+								<ul class=" stui-vodlist__media active col-pd clearfix ">
+									<li>
+										<div class=" thumb ">
+											<a class=" m-thumb " href=" " alt="img" title=" " data-original=" " style="background-image:
+				url(https://ws3.sinaimg.cn/large/005BYqpggy1g0xw7qa0svj307h0akaai.jpg);"></a>
+											<span class=" pic-tag pic-tag-h ">1</span>
+										</div>
+										<div class=" detail detail-side ">
+											<h4 class=" title " style="width:100%;><a href=" "><i class=" icon iconfont icon-more text-muted pull-right "></i> 假戏真作</a></h4>
+											<p class=" font-12 ">
+												<span class=" text-muted ">类型：</span>剧情片 <span class=" text-muted ">地区：</span>
+												<a href=" ">大陆</a>
+											</p>
+											<p class=" font-12 margin-0 "><span class=" text-muted ">主演：</span>王姿霖 夏文晴...</p>
+										</div>
+									</li>
+								</ul>
+								<ul class=" stui-vodlist__rank col-pd clearfix ">
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" "></a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+									<li>
+										<a href=" " title=" "><span class=" text-muted keep-right">高清</span><span class=" badge badge-second ">2</span>疯狂的外星人</a>
+									</li>
+								</ul>
+							</div>
+							<div class=" stui-pannel-hd ">
+								<div class=" stui-pannel__head clearfix ">
+									<a class=" more text-muted " href=" ">更多 <i class=" icon icon-font icon-more "></i></a>
+									<h3 class=" title "><img src=" ">筛选</h3>
+							</div>
+						</div>
+						<div class=" stui-pannel-bd col-pd ">
+							<ul class=" stui-vodlist__screen clearfix ">
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+								<li><a href=" ">大陆</a></li>
+							</ul>
+							<ul class=" stui-vodlist__screen top-line-dot clearfix ">
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+								<li><a href=" ">2019</a></li>
+							</ul>
+						</div>
+						<!--end-->
+					</div>
+					<!--end-->
+				</div>
+				<!--end-->
+			</div>
+		    <!--end-->
+				<!--end：剧情列表-->
+				
+			</div>
+			<!--end:row-->
+		</div>
+		<!--end:container-->
+		
+		<!--start:footer-->
+		<!--start:container-->
+			<div id="container">
+				<div class=" row ">
+					<div class=" stui-foot clearfix ">
+						<div class=" col-pd text-center hidden-xs "></div>
+						<p class="bdsharebuttonbox text-center ">
+							<span class=" bds_share "></span>
+							<a href=" " class=" bds_qzone " data-cmd=" qzone "></a>
+							<a href=" " class=" bds_tsina " data-cmd=" tsina "></a>
+							<a href=" " class=" bds_weixin " data-cmd=" weixin "></a>
+							<a href=" " class=" bds_tqq " data-cmd=" tqq "></a>
+							<a href=" " class=" bds_sqq " data-cmd=" sqq "></a>
+							<a href=" " class=" bds_bdhome " data-cmd=" bdhome "></a>
+							<a href=" " class=" bds_tqf " data-cmd=" tqf "></a>
+							<a href=" " class=" bds_youdao " data-cmd=" youdao "></a>
+							<a href=" " class=" bds_more " data-cmd=" more "></a>
+						</p>
+						<p class=" text-center ">
+							本网站内容收集于互联网，95电影网不承担任何由于内容的合法性及健康性所引起的争议和法律责任。
+						</p>
+						<p class=" text-center ">本站永久免费更新最新电影与剧集，欢迎大家使用并推荐朋友。dstv980@gmail.com</p>
+						<p></p>
+						<p class=" text-center ">
+							<a href=" " title=" " target=" _blank ">
+								<img src=" img/copy.png " alt=" " />
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--end:container-->
+			<!--start-->
+			<ul class=" stui-extra ">
+				<li>
+					<a class=" back-to-top " href=" javascript:scroll(0,0) " style=" list-style: none; ">
+						<i class=" icon iconfont icon-less " style=" list-style: none; text-decoration: none; "></i>
+					</a>
+				</li>
+				<!--<li class=" visible-xs ">
+			<a class=" open-share ">
+				<i class=" icon iconfont icon-share "></i>
+			</a>
+		</li>-->
+				<li class=" hidden-xs ">
+					<span class=" ">
+				<i class=" icon iconfont icon-qrcode "></i>
+			</span>
+					<div class=" col-box ">
+						<img src=" img/weixin.jpg " style=" width: 150px; height:150px; ">
+						<p class=" text-center font-12 ">微信扫码快捷搜索</p>
+					</div>
+				</li>
+				<li title=" 点击加群 ">
+					<a href=" ">
+						<i class=" icon iconfont icon-smile "></i>
+					</a>
+				</li>
+				<li>
+					<a href=" ">
+						<i class=" icon iconfont icon-comments "></i>
+					</a>
+				</li>
+			</ul>
+			<!--end-->
+		<!--end:footer-->
+		<script>
+			var MyElement=document.querySelector("#header");
+			var headroom=new Headroom(MyElement)
+			headroom.init();
+		</script>
+	</body>
+		
+</html>
