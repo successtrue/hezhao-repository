@@ -26,7 +26,7 @@ font{
 div{
 	display: block;
 }
-/*header*/
+
 .logo{
 	display: block;
 	width: 150px;
@@ -36,7 +36,7 @@ div{
 	display: block;
 	width: 150px;
 	height:;
-	background: url(http://www.7dds.com/statics/img/logo.png);
+	background: url();
 	background-position: 50% 50%;
 	background-size: cover;
 	margin-right: 0;
@@ -180,7 +180,6 @@ div{
 	margin-bottom: 20px;
 }
 /*col*/
-@media (min-width: 992px)
 .col-md-2 {
     width: 50%;
 }
